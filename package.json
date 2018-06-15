@@ -1,7 +1,7 @@
 {
-  "name": "gulp-start-template",
+  "name": "Rocket Juice Soon",
   "version": "1.0.0",
-  "description": "gulp start template",
+  "description": "Rocket Juice Soon",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
