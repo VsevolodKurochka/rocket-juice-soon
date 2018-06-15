@@ -1,11 +1,11 @@
 +b('soon')
 	+relative
 	display: flex
+	flex-flow: row wrap
 	align-items: center
 	height: 100vh
 	background-color: $color-brand-1
 	text-transform: uppercase
-	font-size: 23px
 	overflow: hidden
 	z-index: 1
 
@@ -27,6 +27,10 @@
 
 			+min(md)
 				height: 250px
+
+	+e('container')
+
+		width: 100%
 
 	+e('bg')
 
@@ -75,20 +79,36 @@
 
 	+e('subtitle')
 
+		font-size: 20px
+
+		+min(md)
+			font-size: 24px
+
 		+margin-y(15px)
 
 	+e('link')
 		display: block
+		padding: 5px
 		text-decoration: none
 		font-family: 'Gotham Pro Bold'
 		color: inherit
+		font-size: 13px
 		+transition
 
 		&:hover
 			color: $color-brand-2
 
-		&:not(:last-child)
-			margin-bottom: 5px
+		+min(xs)
+			font-size: 16px
+
+		+min(sm)
+			padding: 0
+			font-size: 24px
+
+			&:not(:last-child)
+				margin-bottom: 10px
+
+		
 
 		&-text
 			display: inline-block
