@@ -37,11 +37,11 @@
 		+absolute(0, null, null, 0)
 		+size(100%)
 		z-index: -1
-		opacity: 0.5
+		opacity: 0.9
 
 		$particleSize: 5vmin
 		$animationDuration: 20s
-		$amount: 10
+		$amount: 20
 		span
 			width: $particleSize
 			height: $particleSize
@@ -52,7 +52,7 @@
 			animation-duration: $animationDuration
 			animation-timing-function: linear
 			animation-iteration-count: infinite
-			$colors: (#97B230,#f6b20e,#FFACAC)
+			$colors: (#fff, #ffc300)
 			@for $i from 1 through $amount
 				&:nth-child(#{$i})
 					color: nth($colors, random(length($colors)))
@@ -91,7 +91,7 @@
 		padding: 5px
 		text-decoration: none
 		font-family: 'Gotham Pro Bold'
-		color: inherit
+		color: $color-general
 		font-size: 13px
 		+transition
 
