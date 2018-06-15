@@ -1,15 +1,20 @@
 // Connect fonts
-=connect-font($font, $class_name: $font, $fileType: otf)
-  @font-face
-    font-family: $font
-    src: local("#{$font}"), url(../fonts/#{$font}.#{$fileType})
+@font-face
+  font-family: 'Gotham Pro Light'
+  src: url('../fonts/GothamPro-Light.eot')
+  src: url('../fonts/GothamPro-Light.eot?#iefix') format("embedded-opentype"), url('../fonts/GothamPro-Light.woff') format("woff"), url('../fonts/GothamPro-Light.ttf') format("truetype")
+  font-weight: normal
+  font-style: normal
 
-  @if $class_name != null
-    .#{$class_name}
-      font-family: $font
-  @else
-    .#{$font}
-      font-family: $font
+@font-face
+  font-family: 'Gotham Pro Bold'
+  src: url('../fonts/GothamPro-Bold.eot')
+  src: url('../fonts/GothamPro-Bold.eot?#iefix') format("embedded-opentype"), url('../fonts/GothamPro-Bold.woff') format("woff"), url('../fonts/GothamPro-Bold.ttf') format("truetype")
+  font-weight: normal
+  font-style: normal
 
-.font-general
-  font-family: 'Roboto', sans-serif
+.font
+  &-general
+    font-family: 'Gotham Pro Light'
+  &-bold
+    font-family: 'Gotham Pro Bold'
